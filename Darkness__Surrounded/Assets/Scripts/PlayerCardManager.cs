@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+using Photon.Pun;
+using Photon.Realtime;
+
+public class PlayerCardManager : MonoBehaviour
+{
+    public TMP_Text _playerName;
+    public void SetPlayerInfo(Player _player)
+    {
+        _playerName.text = _player.NickName;
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
